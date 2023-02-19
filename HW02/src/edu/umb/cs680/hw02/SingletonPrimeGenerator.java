@@ -3,11 +3,11 @@ package edu.umb.cs680.hw02;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class PrimeGenerator {
+public class SingletonPrimeGenerator {
 	protected long from, to;
 	protected LinkedList<Long> primes = new LinkedList<Long>();
 
-	private PrimeGenerator(long from, long to){
+	private SingletonPrimeGenerator(long from, long to){
 		if(from >= 1 && to > from){
 			this.from = from;
 			this.to = to;
@@ -16,13 +16,13 @@ public class PrimeGenerator {
 		}
 	}
 	
-	private static PrimeGenerator instance = null;
+	private static SingletonPrimeGenerator instance = null;
 	
-	public static PrimeGenerator getInstance(long from, long to)
+	public static SingletonPrimeGenerator getInstance(long from, long to)
 	{
 		if(instance == null)
-			instance = new PrimeGenerator(from, to);
-		return instance;
+			instance = new SingletonPrimeGenerator(from, to);
+		return instance;	
 	}
 	
 	public LinkedList<Long> getPrimes(){ return primes; };
@@ -52,7 +52,7 @@ public class PrimeGenerator {
 	}
 	
 	public static void main(String[] args) {
-		PrimeGenerator gen = new PrimeGenerator(1, 100);
+		SingletonPrimeGenerator gen = new SingletonPrimeGenerator(1, 100);
 		gen.generatePrimes();
 		LinkedList<Long> primes = gen.getPrimes();
 		Iterator<Long> it = primes.iterator();
