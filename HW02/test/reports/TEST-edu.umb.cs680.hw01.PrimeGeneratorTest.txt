@@ -1,5 +1,0 @@
-Testcase: edu.umb.cs680.hw01.PrimeGeneratorTest
-Test: primesNumbersFrom1to20Test() took 24 milli sec(s)
-Test: primesNegativeIntTest() took 3 milli sec(s)
-Test: primesWrongRange50to1Test() took 2 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 46 milli sec(s)
