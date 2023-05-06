@@ -4,7 +4,6 @@
 	<property name="test.src" location="test/src" />
 	<property name="test.bin" location="test/bin" />
 	<property name="ivy.lib" location="lib"/>
-	
 	<path id="classpath">
 		<pathelement location="${bin}" />
 		<pathelement location="${test.bin}" />
