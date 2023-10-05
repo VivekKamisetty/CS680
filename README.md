@@ -1,3 +1,3 @@
 # CS680
 
-## My Homework Submissions
+## CS680 Course Homeworks at UMASS Boston
